@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Bảng cửu chương</title>
+</head>
+<body>
+    <script>
+        document.write("<table border=1 width=50%>")
+        for(i=1;i<=9;i++)
+        {
+            document.write("<tr>")
+            for(n=2;n<=9;n++) {
+                document.write("<td>" + n + "x" + i + "=" + (n * i) + "</td>");
+            }
+            document.write("</tr>")
+        }
+    </script>
+</body>
+</html>
