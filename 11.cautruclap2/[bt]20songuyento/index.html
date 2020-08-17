@@ -9,15 +9,13 @@
         function checksnt(a){
             if (a < 2){
                 return false;
-            }else {
-                for (i = 2; i < a - 1; i++){
-                    if (a % i == 0){
-                        return false;
-                    }else {
-                        return true;
-                    }
+            }
+            for (i = 2; i < a - 1 ; i++){
+                if (a % i == 0){
+                     return false;
                 }
             }
+            return true;
         }
         dem = 0;
         j = 2;
