@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bt] Hiển thị 20 số nguyên tố</title>
+</head>
+<body>
+    <script>
+        function checksnt(a){
+            if (a < 2){
+                return false;
+            }else {
+                for (i = 2; i < a - 1; i++){
+                    if (a % i == 0){
+                        return false;
+                    }else {
+                        return true;
+                    }
+                }
+            }
+        }
+        dem = 0;
+        j = 2;
+        while (dem < 20) {
+            if (checksnt(j)) {
+                document.write(j + " ");
+                dem++;
+            }
+            j++;
+        }
+    </script>
+</body>
+</html>
