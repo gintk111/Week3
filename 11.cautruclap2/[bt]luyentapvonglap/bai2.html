@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let n = parseFloat(prompt("Nhập nhiệt độ hiện tại: "));
+    while (n < 20 || n > 100) {
+        if (n < 20) {
+            n = prompt("Tăng nhiệt độ");
+        }
+        if (n > 100) {
+            n = prompt("Giảm nhiệt độ");
+        }
+    }
+</script>
+</body>
+</html>

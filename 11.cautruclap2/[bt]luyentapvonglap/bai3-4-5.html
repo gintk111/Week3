@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    //Hiển thị 20 số fibonaci đầu tiên
+
+    function fibonacci(num) {
+        var num0 = 0;
+        var num1 = 1;
+        var numn = 1;
+
+        if (num <= 1) {
+            return num;
+        } else {
+            for (i = 2; i < num; i++) {
+                num0 = num1;
+                num1 = numn;
+                numn = num0 + num1;
+            }
+        }
+        return numn;
+    }
+
+    document.write("20 số đầu tiên của dãy số fibonacci: ");
+    for (i = 1; i <= 20; i++) {
+        document.write(fibonacci(i) + "&nbsp" );
+    }
+    document.write("<br>")
+    // Tổng 20 số fibo đầu tiên
+
+    let sum = null;
+    for (i = 1; i <= 20; i++) {
+        sum += fibonacci(i);
+    }
+    document.write("Tổng 20 số fibonaci đầu tiên là : " + sum +"<br>")
+
+    // Hiển thị số fibo đầu tiên chia hết cho 5
+    let a = null;
+    for (i = 1; i >= 1; i++){
+        if (fibonacci(i) % 5 == 0){
+            a += fibonacci(i);
+            break
+        }
+    }
+    document.write("Số đầu tiên trong dãy fibonacci chia hết cho 5 là: " + a )
+</script>
+</body>
+</html>
