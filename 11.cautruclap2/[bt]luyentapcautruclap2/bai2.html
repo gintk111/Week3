@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    for (i = 0; i <= 5; i++) {
+        for (j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    ///////////////////////////
+
+    for (i = 0; i < 5; i++) {
+        for (j = 5; j > i; j--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+    ////////////////////////////
+
+    let result = "";
+
+    for (let i = 0; i < 5; i++) {
+        for (let j = 4; j >= 0; j--) {
+            if (j > i) {
+                result += " &nbsp ";
+            } else result += "*";
+        }
+        document.write(result);
+        document.write("<br>");
+        result = "";
+    }
+    document.write("<br>");
+
+    ////////////////////////////
+
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j <= 5; j++) {
+            if (j <= i) {
+                result += "&nbsp ";
+            } else result += "*";
+        }
+
+        document.write(result);
+        document.write("<br>");
+        result = "";
+    }
+
+
+</script>
+</body>
+</html>

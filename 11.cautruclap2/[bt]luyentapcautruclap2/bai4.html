@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let fistmoney = parseInt(prompt("Số tiền ban đầu:"));
+    let mouth = parseInt(prompt("Số tháng vay:"))
+    let rate = parseInt(prompt("Lãi suất tháng:"))
+    alert("Tiền lãi của bạn thời điểm hiện tại là : " + parseInt(fistmoney * Math.pow((1 + rate / 100), mouth) - fistmoney))
+</script>
+</body>
+</html>

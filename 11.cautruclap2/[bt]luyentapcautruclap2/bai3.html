@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    let result = "";
+    for (let i = 0; i <= 10; i++) {
+        if (i == 0 || i == 10) {
+            for (let j = 0; j <= 30; j++) {
+                result += "*";
+            }
+            document.write("<br>");
+            document.write(result);
+            result = "";
+        } else {
+            for (let j = 0; j <= 30; j++) {
+                if (j == 0 || j == 30 ) {
+                    result += "*"
+                } else {
+                    result += "&nbsp ";
+                }
+            }
+            document.write("<br>");
+            document.write(result);
+            result = "";
+        }
+    }
+</script>
+</body>
+</html>

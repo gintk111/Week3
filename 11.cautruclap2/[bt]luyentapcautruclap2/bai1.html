@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        function giaithua (num){
+            total = 1;
+            for (i = 1; i < num; i++){
+                total *= i;
+            }
+            return total;
+        }
+        let n = parseInt(prompt("Nhập số n"));
+        if (n <= 0){
+            alert("n phải lớn hơn 0");
+        }
+        else {
+         alert("Giai thừa của " + n + "là" + " " + eval(giaithua (n)));
+        }
+    </script>
+</body>
+</html>
