@@ -11,9 +11,9 @@
     function fibonacci(num) {
         var num0 = 0;
         var num1 = 1;
-        var numn = 1;
+        var numn = num0 + num1;
 
-        if (num <= 1) {
+        if (num <= 1 ) {
             return num;
         } else {
             for (i = 2; i < num; i++) {
@@ -26,7 +26,7 @@
     }
 
     document.write("20 số đầu tiên của dãy số fibonacci: ");
-    for (i = 1; i <= 20; i++) {
+    for (i = 0; i <= 20; i++) {
         document.write(fibonacci(i) + "&nbsp" );
     }
     document.write("<br>")
