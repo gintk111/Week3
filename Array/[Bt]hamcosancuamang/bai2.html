@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let num = prompt("Nhập dãy số: ");
+        let result = [num];
+        for(i = 0; i < num.length ; i++){
+            if (num[i] % 2 == 0 && num[i - 1] % 2 == 0){
+                result.push('-', num[i])
+            }
+            else
+            {
+                result.push(num[i]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+</html>

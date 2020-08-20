@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+    <script>
+        let input = prompt("Nhập tên 1 con vật: ");
+        let arr1 = ['Chó', 'Mèo', 'Lợn', 'Gà', 'Bò', 'Hổ', 'Sư tử', 'Gấu'];
+        let arr2 = ['Dog', 'Cat', 'Pig', 'Chicken', 'Bull', 'Tiger', 'Lion',];
+
+        if (arr1.includes(input)){
+            alert("Con " + input + " tiếng Anh là " + arr2[arr1.indexOf(input)]);
+        }
+        else {
+            alert("Không tìm thấy");
+        }
+    </script>
+</body>
+</html>
