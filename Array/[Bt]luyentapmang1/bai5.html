@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let count = 0;
+        for (let i = 0; i < 10; i++) {
+            arr[i] = parseInt(prompt("Nhập giá trị " + (i + 1) + " cho mảng" ));
+        }
+        for (let i = 0; i < arr.length; i++){
+            if (arr[i] < 0){
+                count += 1;
+            }
+        }
+        document.write("Trong mảng có " + count + " giá trị nhỏ hơn 0");
+    </script>
+</body>
+</html>

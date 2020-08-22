@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let sum = 0;
+
+        for (let i = 0; i < 10; i++){
+            arr[i] = parseInt(prompt("Nhập ký tự " + i));
+        }
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+        }
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+        document.write("Phần tử lớn nhất trong mảng là " + max + "<br>" );
+        document.write("Tổng của mảng à " + sum );
+    </script>
+</body>
+</html>

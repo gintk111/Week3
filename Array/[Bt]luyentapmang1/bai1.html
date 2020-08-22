@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let count = 0;
+        for (let i = 0; i < 5; i++){
+            arr[i] = parseInt(prompt("Nhập ký tự " + i));
+        }
+        console.log(arr);
+        for (let j = 0; j < 5; j++){
+            if (arr[j] >= 5){
+                count += 1;
+            }
+        }
+        alert("Số các phần tử lớn hơn 10 là " + count);
+    </script>
+</body>
+</html>

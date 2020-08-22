@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("Nhập phần tử thứ " + (i + 1)));
+        for (let j = 0; j < arr.length - 1; j++) {
+            if (arr[i] === arr[j]) {
+                arr[i] = parseInt(prompt("Đã tồn tại, mời nhập lại: "));
+            }
+        }
+    }
+    let max = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        if (max < arr[i]) {
+            max = arr[i];
+        }
+    }
+    document.write("Giá trị của phần tử lớn nhất là: " + max + " nằm ở vị trí thứ " + (arr.indexOf(max) + 1));
+</script>
+</body>
+</html>

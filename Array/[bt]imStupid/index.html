@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bt]IM Stupid</title>
+    <style>
+        body {
+            width: 300px;
+            margin: auto;
+            margin-top: 150px;
+        }
+    </style>
+</head>
+<body>
+<textarea cols="40" rows="15" id="text" onkeyup="tl1dc()"></textarea>
+<script>
+    let arr = ['T', 'Ô', 'I', ' ', 'L', 'À', ' ', 'Đ', 'Ứ', 'A', ' ', 'N', 'G', 'Ố', 'C', '!', '!', '!'];
+    let result = "";
+
+    function tl1dc() {
+        let value = document.getElementById("text").value;
+        if (value.length > 0) {
+            for (let i = 0; i <= value.length; i++) {
+                result += arr[i];
+                if (i === 18) {
+                    value = "";
+                    result = "";
+                }
+            }
+        }
+        document.getElementById("text").value = result;
+        result = "";
+    }
+</script>
+</body>
+</html>
